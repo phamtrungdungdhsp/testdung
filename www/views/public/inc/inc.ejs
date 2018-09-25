@@ -1,0 +1,183 @@
+<section class="padding-b-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumbs">
+                    <span class="trail-browse"></span><span class="trail-begin"><a href="/trang-chu.html">Trang chủ</a></span>
+                    <span class="sep"><i class="fa fa-angle-right"></i></span><a href="/san-pham.html">Sản phẩm</a>
+                    <span class="sep"><i class="fa fa-angle-right"></i></span><a href="/san-pham-con/<%-  menu._id %>.html"><%-  menu.name %></a>
+                    <span class="sep"><i class="fa fa-angle-right"></i></span><span class="trail-end"><%-  product.name %></span>
+                </div>
+                <div class="line-2px"></div>
+            </div>                    
+        </div>
+    </div>
+</section>
+<section>
+        <div class="container">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="content-area content-single-product">
+                        <div class="wrap-one-haft clearfix">
+                            <div class="one-haft margin-b-mb-20">
+                                <div class="product-images">
+                                    <div class="main-img-slider">
+                                        <% product.pictures.forEach(picture=>{ %>        
+                                            <figure>
+                                                <a href="#" data-size="1400x1400">
+                                                    <img src="<%-  picture %>"  alt="" />
+                                                </a>                                
+                                            </figure>
+                                        <% }) %>                                    
+                                    </div>
+                                    <ul class="thumb-nav">
+                                        <% product.pictures.forEach(picture=>{ %>        
+                                            <li><img src="<%-  picture %>"  alt="product-thumb" /></li>
+                                        <% }) %> 
+                                    </ul>                         
+                                </div>
+                            </div><!-- one-haft -->                            
+                        
+                            <div class="one-haft">
+                                <div class="single-product">
+                                    <h2><%-  product.name %></h2>
+                                    <div class="line-2px-w60 margin-b-20"></div>
+                                    <div class="product-detail">
+                                        <ul>
+                                            <li><div class="product-id"><span>Mã sản phẩm: </span><%-  product.productCode %></div></li>
+                                            <li><div class="product-manufacturer"><span>Hãng sản xuất: </span><%-  product.manufacturer %></div></li>
+                                            <li><div class="product-trademark"><span>Thương hiệu: </span><%-  product.trademark %></div></li>
+                                            <li><div class="product-size"><span>Kích thước: </span><%-  product.size %></div></li>
+                                            <li><div class="product-description"><span>Mô tả: </span><%-  product.description %></div></li>
+                                        </ul>                                    
+                                    </div> 
+
+                                    <div class="box-question-product">
+                                        <div class="title">HỎI VỀ SẢN PHẨM</div>
+                                        <div class="time"><span>Giờ làm việc: </span>8h30-19h00</div>
+                                        <div class="phone"><span>Đặt qua điện thoại: </span>(024) 3733 7366</div>
+                                    </div>
+                                </div><!-- single-product -->
+                            </div><!-- one-haft -->
+                        </div><!-- wrap-one-haft -->
+                    </div><!-- content-area -->
+                    <div class="line-2px"></div>
+                    <div class="padding-t-30">
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=112&layout=button&action=like&size=small&show_faces=false&share=true&height=65&appId=1920952037972441" width="112" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div id="respond" class="comment-respond">
+                        <h3 id="reply-title" class="comment-reply-title">120 bình luận</h3>
+                        
+                        <form action="#" method="post" id="commentform" class="comment-form"> 
+                            <fieldset class="avatar"><img src="/template/public/images/avatar-5.png" alt="image"></fieldset>
+                            <fieldset class="message-wrap">
+                                <textarea id="comment-message" name="comment" rows="8" tabindex="4" placeholder="Thêm bình luận" aria-required="true"></textarea>
+                            </fieldset>
+                        </form>                       
+                    </div>
+
+                    <div id="comments" class="comments-area margin-b-mb-30">                            
+                        <ol class="comment-list">
+                            <li class="comment">
+                                <article class="comment-wrap clearfix">
+                                    <div class="gravatar"><img src="/template/public/images/avatar-4.png" alt="image"></div>
+                                    <div class="comment-content">
+                                        <div class="comment-meta">
+                                            <h4 class="comment-author">Vũ Minh Anh</h4>
+                                            <div class="comment-conpany">Công ty cổ phẩn An Phú Thịnh</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- .children -->
+                            </li>
+                            <!-- #comment-## -->
+                            
+                            <li class="comment">
+                                <article class="comment-wrap clearfix">
+                                    <div class="gravatar"><img src="/template/public/images/avatar-5.png" alt="image"></div>
+                                    <div class="comment-content">
+                                        <div class="comment-meta">
+                                            <h4 class="comment-author">Nguyễn Quang Vinh</h4>
+                                            <div class="comment-conpany">Công ty TNHH Hoàng Hải</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- .children -->
+                            </li>
+                            <!-- #comment-## -->
+
+                            <li class="comment">
+                                <article class="comment-wrap clearfix">
+                                    <div class="gravatar"><img src="/template/public/images/avatar-6.png" alt="image"></div>
+                                    <div class="comment-content">
+                                        <div class="comment-meta">
+                                            <h4 class="comment-author">Đỗ Vinh Hiển</h4>
+                                            <div class="comment-conpany">Công ty ABC</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- .children -->
+                            </li>
+                            <!-- #comment-## -->
+                           
+                        </ol>
+                        <!-- /.comment-list -->
+                    </div>
+                </div> 
+                <div class="col-lg-4 col-sm-12">
+                    <div class="sidebar">
+                        <div id="widget_recent_post-2" class="widget widget-recent-news">
+                            <h3 class="widget-title">SẢN PHẨM CÙNG LOẠI</h3>
+                            <ul class="recent-news widget-content clearfix">
+                                <% productLikes.forEach(product=>{ %>        
+                                    <li>
+                                        <div class="thumb">
+                                            <span class="overlay-pop"></span>
+                                            <a href="#"><img src="<%-  product.pictures[0] %>" alt="image"></a>
+                                        </div>
+    
+                                        <div class="text">
+                                            <h3><a href="#" rel="bookmark"><%-  product.name %></a></h3>
+                                            <p>MSP: <%-  product.productCode %></p>
+                                        </div>
+                                        <!-- /.text -->
+                                    </li>
+                                <% }) %>                               
+                            </ul>
+                        </div><!-- widget -->
+
+                        <div id="widget_recent_post-2" class="widget widget-recent-news">
+                            <h3 class="widget-title">LỰA CHỌN KHÁC</h3>
+                            <ul class="recent-news widget-content clearfix">
+                                <% productDifferent.forEach(product=>{ %>        
+                                    <li>
+                                        <div class="thumb">
+                                            <span class="overlay-pop"></span>
+                                            <a href="#"><img src="<%-  product.pictures[0] %>" alt="image"></a>
+                                        </div>
+    
+                                        <div class="text">
+                                            <h3><a href="#" rel="bookmark"><%-  product.name %></a></h3>
+                                            <p>MSP: <%-  product.productCode %></p>
+                                        </div>
+                                        <!-- /.text -->
+                                    </li>
+                                <% }) %> 
+                            </ul>
+                        </div><!-- widget -->
+                    </div><!-- sidebar -->
+                </div>
+            </div>
+        </div>
+    </section>
